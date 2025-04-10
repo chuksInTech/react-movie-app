@@ -1,1 +1,24 @@
- 
+
+node_modules/
+npm-debug.log*
+
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+build/
+.out/
+.vercel/
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local development
+*.local
