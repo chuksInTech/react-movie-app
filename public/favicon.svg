@@ -1,0 +1,21 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="30" fill="#6d28d9" />
+  
+  <!-- Film Reel Elements -->
+  <rect x="14" y="22" width="36" height="20" rx="2" fill="#f8fafc" />
+  
+  <!-- Film Perforations -->
+  <circle cx="19" cy="24" r="2" fill="#6d28d9" />
+  <circle cx="19" cy="30" r="2" fill="#6d28d9" />
+  <circle cx="19" cy="36" r="2" fill="#6d28d9" />
+  <circle cx="19" cy="42" r="2" fill="#6d28d9" />
+  
+  <circle cx="45" cy="24" r="2" fill="#6d28d9" />
+  <circle cx="45" cy="30" r="2" fill="#6d28d9" />
+  <circle cx="45" cy="36" r="2" fill="#6d28d9" />
+  <circle cx="45" cy="42" r="2" fill="#6d28d9" />
+  
+  <!-- Play Button -->
+  <polygon points="29,26 39,32 29,38" fill="#6d28d9" />
+</svg>
