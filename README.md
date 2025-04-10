@@ -21,8 +21,9 @@ Styling: Tailwind CSS
 State Management: React Context API
 Environment Variables: Vite
 
-<img width="920" alt="moviecard" src="https://github.com/user-attachments/assets/a2b87d48-2b2a-4b91-91e3-80d15f2d8c80" />
-<img width="917" alt="movieshot" src="https://github.com/user-attachments/assets/e629db6c-7939-4053-bb8a-93d668f1f00c" />
+![moviecard](https://github.com/user-attachments/assets/66b63c7d-5428-438d-af7b-835a48d13c19)
+![moviecard2](https://github.com/user-attachments/assets/2962b378-50e1-4943-b895-fbc1209860d5)
+
 
 Installation
 
