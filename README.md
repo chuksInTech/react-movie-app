@@ -30,7 +30,7 @@ Clone the repository
 git clone https://github.com/chuksInTech/react-movie-app.git
 
 Install dependencies
-cd moviefinder
+cd movie_search then, cd movie_app
 npm install
 
 Create a .env file in the root directory with your API keys
@@ -44,7 +44,7 @@ Set up Appwrite
 
 Create an Appwrite project
 Set up authentication (including Google OAuth if needed)
-Create a database with the necessary collections (users, watchlist, favorites, preferences)
+Create a database with the necessary collections (users, watchlist, favorites, preferences{preferredGenres[], adultcontents:false}
 
 Start the development server
 npm run dev
@@ -65,7 +65,7 @@ Password reset functionality
 For any questions or suggestions, feel free to reach out:
 GitHub: github.com/chuksInTech
 Email: chyootch@gmail.com
-X: x.com/chuksInTech
+Follow me on X to get updated on new projects: x.com/chuksInTech
 
 Made with ❤️ by Chukwum Duru (chuksInTech)
 
