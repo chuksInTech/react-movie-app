@@ -1,4 +1,4 @@
-MovieFinder 🎬
+MovieFinder.
 A modern React application that helps users discover movies based on their preferences, manage watchlists, login to save movies, and track favorite films.
 
 Features
@@ -27,7 +27,7 @@ Environment Variables: Vite
 Installation
 
 Clone the repository
-git clone https://github.com/yourusername/moviefindr.git
+git clone https://github.com/chuksInTech/react-movie-app.git
 
 Install dependencies
 cd moviefinder
@@ -48,26 +48,6 @@ Create a database with the necessary collections (users, watchlist, favorites, p
 
 Start the development server
 npm run dev
-
-Project Structure
-src/
-├── components/
-│   ├── AppContent.jsx       # Main app container
-│   ├── AuthContext.jsx      # Authentication context provider
-│   ├── GenreFilter.jsx      # Genre filtering component
-│   ├── Login.jsx            # Login page
-│   ├── MovieCard.jsx        # Movie card component
-│   ├── MovieDetails.jsx     # Detailed movie view
-│   ├── NavBar.jsx           # Navigation bar
-│   ├── ProtectedRoute.jsx   # Route protection wrapper
-│   ├── Register.jsx         # Registration page
-│   ├── Search.jsx           # Search component
-│   ├── SortOptions.jsx      # Sorting options component
-│   ├── Spinner.jsx          # Loading indicator
-│   └── UserProfile.jsx      # User profile management
-├── App.jsx                  # Main application component
-├── appwrite.js              # Appwrite configuration and API
-└── utility.js               # Utility functions
 
 API Integration
 This project uses The Movie Database (TMDB) API for movie data. You'll need to:
