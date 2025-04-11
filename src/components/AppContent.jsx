@@ -211,13 +211,6 @@ const AppContent = () => {
         setSortBy(sortOptions);
     };
 
-    // Add an effect to load user preferences when the user logs in
-    useEffect(() => {
-        if (!selectedGenre) {
-            fetchMovies(debouncedSearchTerm);
-        }
-    }, [userData]);
-
     useEffect(() => {
         fetchGenres();
     }, []);
@@ -310,7 +303,7 @@ const AppContent = () => {
                                 <p className='text-white text-center mt-10'> No movies found. Try adjusting your filter</p>
                             ) : (
 
-                                <ul>
+                                <ul className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 p-4">
                                     {movieList.map((movie) => (
                                         <Moviecard key={`movie-${movie.id}`} movie={movie} />
                                     ))}
