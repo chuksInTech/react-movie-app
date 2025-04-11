@@ -1,7 +1,7 @@
 import { useDebounce } from 'use-debounce';
 import React, { useEffect, useState } from 'react';
 import { AuthProvider } from './AuthContext.jsx';
-import Search from './search.jsx';
+import Search from './Search.jsx';
 import Spinner from './Spinner.jsx';
 import Moviecard from './Moviecard.jsx';
 import GenreFilter from './GenreFilter.jsx';
