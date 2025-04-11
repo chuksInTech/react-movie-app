@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { User, LogIn } from 'lucide-react';
 import { useAuth } from './AuthContext';
-import Search from './search.jsx';
+import Search from './Search.jsx';
 
 
 const Navbar = ({searchTerm, setSearchTerm}) => {
