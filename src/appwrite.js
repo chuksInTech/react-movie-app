@@ -72,8 +72,10 @@ export const googleLogin = async () => {
     try {
         account.createOAuth2Session(
             "google",
-            `${window.location.origin}/auth/callback`,
-            `${window.location.origin}/login`,
+            'https://moviefinder-psi.vercel.app/auth/callback',
+            'https://moviefinder-psi.vercel.app/login',
+            // `${window.location.origin}/auth/callback`,
+            // `${window.location.origin}/login`,
             ["profile", "email"]
         );
     } catch (error) {

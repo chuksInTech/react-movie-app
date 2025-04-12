@@ -404,7 +404,7 @@ const UserProfile = () => {
                             <h2 className="text-base sm:text-lg md:text-xl font-bold">Your Preferences</h2>
                             <button
                                 onClick={() => handleSavePreferences()}
-                                className="bg-green-600 px-2 py-0.5 text-sm sm:px-3 sm:py-1 sm:text-base md:px-4 md:py-1.5 md:text-lg hover:bg-green-700 text-white font-bold rounded"
+                                className="bg-green-600 px-2 py-1 text-sm sm:px-3 sm:py-1 sm:text-base md:px-4 md:py-1.5 md:text-lg hover:bg-green-700 text-white font-bold rounded"
                             >
                                 Save Changes
                             </button>
@@ -482,7 +482,7 @@ const UserProfile = () => {
         <div className="min-h-screen bg-gray-900 text-white py-6 px-4">
             <div className="max-w-6xl mx-auto">
                 <div className="flex justify-between items-center mb-6">
-                    <a href="/" className="text-base sm:text-lg md:text-2xl font-bold text-purple-500">MovieFinder</a>
+                    <a href="/" className="text-xl font-bold text-purple-500">MovieFinder</a>
                     {renderProfileDropdown()}
                 </div>
                 <div className="mb-6">

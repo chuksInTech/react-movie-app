@@ -247,7 +247,7 @@ const AppContent = () => {
 
                         </header>
 
-                        <h3 className="sm:text-xs md:text-sm lg:text-base py-2 px-4 sm:px-4 text-gray-500 italic tracking-wide mb-1 mt-8 text-center sm:text-left">
+                        <h3 className="sm:text-xs md:text-sm lg:text-base text-left py-2 px-4 sm:px-4 text-gray-500 italic tracking-wide mb-1 mt-8 sm:text-left">
                             Select the genres you're most interested in to improve your recommendations.
                         </h3>
 
