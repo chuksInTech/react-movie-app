@@ -251,10 +251,10 @@ const UserProfile = () => {
             case "profile":
                 return (
                     <div className="bg-gray-800 p-6 rounded-lg shadow-lg">
-                        <h2 className="text-2xl font-bold mb-4">Profile Information</h2>
+                        <h2 className="text-base sm:text-lg md:text-xl font-bold mb-4">Profile Information</h2>
                         <div className="bg-gray-700 rounded-lg p-4">
                             <div className="flex items-center space-x-4 mb-4">
-                                <div className="bg-purple-600 rounded-full w-16 h-16 flex items-center justify-center text-2xl font-bold">
+                                <div className="bg-purple-600 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center text-base sm:text-lg md:text-xl font-bold">
                                     {userData.name?.charAt(0).toUpperCase() || 'You'}
                                 </div>
                                 <div>
@@ -275,7 +275,7 @@ const UserProfile = () => {
             case "favorites":
                 return (
                     <div className="bg-gray-800 rounded-lg p-6 shadow-lg">
-                        <h2 className="text-2xl font-bold mb-4">Your Favorites</h2>
+                        <h2 className="text-base sm:text-lg md:text-xl font-bold mb-4">Your Favorites</h2>
                         {userData.favorites && userData.favorites.length > 0 ? (
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                                 {userData.favorites.map(movie => (
@@ -332,7 +332,7 @@ const UserProfile = () => {
             case "watchlist":
                 return (
                     <div className="bg-gray-800 rounded-lg p-4 shadow-lg">
-                        <h2 className="text-2xl font-bold mb-4">Your Watchlist</h2>
+                        <h2 className="text-base sm:text-lg md:text-xl font-bold mb-4">Your Watchlist</h2>
                         {userData.watchlist && userData.watchlist.length > 0 ? (
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                                 {userData.watchlist.map(movie => (
@@ -401,10 +401,10 @@ const UserProfile = () => {
                         )}
 
                         <div className="flex justify-between items-center mb-4">
-                            <h2 className="text-2xl font-bold">Your Preferences</h2>
+                            <h2 className="text-base sm:text-lg md:text-xl font-bold">Your Preferences</h2>
                             <button
                                 onClick={() => handleSavePreferences()}
-                                className="bg-green-600 hover:bg-green-700 text-white font-bold py-1.5 px-4 rounded"
+                                className="bg-green-600 px-2 py-0.5 text-sm sm:px-3 sm:py-1 sm:text-base md:px-4 md:py-1.5 md:text-lg hover:bg-green-700 text-white font-bold rounded"
                             >
                                 Save Changes
                             </button>
@@ -482,12 +482,12 @@ const UserProfile = () => {
         <div className="min-h-screen bg-gray-900 text-white py-6 px-4">
             <div className="max-w-6xl mx-auto">
                 <div className="flex justify-between items-center mb-6">
-                    <a href="/" className="text-2xl font-bold text-purple-500">MovieFinder</a>
+                    <a href="/" className="text-base sm:text-lg md:text-2xl font-bold text-purple-500">MovieFinder</a>
                     {renderProfileDropdown()}
                 </div>
                 <div className="mb-6">
 
-                    <nav className="space-x-1">
+                    <nav className="space-x-1 space-y-1.5">
                         <button
                             onClick={() => setActiveTab("preferences")}
                             className={`px-4 py-2 rounded-t-lg font-medium ${activeTab === 'preferences' ? 'bg-gray-800 text-white' : 'bg-gray-700 text-gray-300 hover:bg-gray-600'}`}

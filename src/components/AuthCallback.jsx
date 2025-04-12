@@ -13,6 +13,7 @@ const AuthCallback = () => {
     useEffect(() => {
         const verifyAuth = async () => {
             try {
+                await new Promise(resolve => setTimeout(resolve, 1000));
                 setLoading(true);
                 
                 // Verify user session

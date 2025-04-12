@@ -72,7 +72,7 @@ export const googleLogin = async () => {
     try {
         account.createOAuth2Session(
             "google",
-            `${window.location.origin}/auth-callback`,
+            `${window.location.origin}/auth/callback`,
             `${window.location.origin}/login`,
             ["profile", "email"]
         );
