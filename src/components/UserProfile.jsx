@@ -179,10 +179,10 @@ const UserProfile = () => {
                     onClick={() => setDropDownOpen(!dropDownOpen)}
                     className="flex items-center space-x-2 bg-gray-700 hover:bg-gray-600 rounded-lg p-2 text-white focus:outline-none"
                 >
-                    <div className="bg-purple-600 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">
+                    <div className="bg-purple-600 rounded-full w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center text-xs sm:text-sm font-bold">
                         {userData.name?.charAt(0).toUpperCase() || 'You'}
                     </div>
-                    <span className="font-medium">{userData.name}</span>
+                    <span className="font-medium text-sm sm:text-base">{userData.name}</span>
                     <ChevronDown size={18} className={`transition-transform ${dropDownOpen ? 'rotate-180' : ''}`} />
                 </button>
 
