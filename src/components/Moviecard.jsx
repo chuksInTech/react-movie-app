@@ -126,7 +126,6 @@ const Moviecard = ({ movie }) => {
     };
 
     const handleCardClick = (e) => {
-        // Don't navigate if clicking on buttons
         const isButton = e.target.closest('button');
         if (!isButton) {
             navigate(`/movie/${movie.id}`);
@@ -145,7 +144,7 @@ const Moviecard = ({ movie }) => {
                     loading='lazy'
                 />
 
-                <div className={`absolute inset-0 bg-gradient-to-t from-black/70 to-transparent ${isMobile ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'} transition-opacity`}>
+                <div className={`absolute inset-0 bg-gradient-to-t from-black/70 to-transparent ${isMobile ? 'opacity-50' : 'opacity-0 group-hover:opacity-100'} transition-opacity`}>
                     <div className='absolute bottom-0 p-4 w-full'>
                         <div className='flex justify-between items-center mb-2'>
                             <div className='bg-yellow-600 text-white text-sm font-bold px-2 py-1 rounded'>
@@ -190,7 +189,7 @@ const Moviecard = ({ movie }) => {
             {showExistPrompt && (
                 <div className="absolute top-1/2 left-1/2 bg-gray-900 text-white text-sm py-2 px-3 rounded-md shadow-lg flex items-center transform -translate-x-1/2 -translate-y-1/2">
                     <AlertCircle size={16} className="mr-2 text-yellow-500" />
-                    Movie already exist!
+                    Movie already exists!
                 </div>
             )}
 
