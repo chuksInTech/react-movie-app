@@ -404,7 +404,7 @@ const UserProfile = () => {
                             <h2 className="text-base sm:text-lg md:text-xl font-bold">Your Preferences</h2>
                             <button
                                 onClick={() => handleSavePreferences()}
-                                className="bg-green-600 px-2 py-1 text-sm sm:px-3 sm:py-1 sm:text-base md:px-4 md:py-1.5 md:text-lg hover:bg-green-700 text-white font-bold rounded"
+                                className="bg-green-600 px-2 py-1.5 text-sm sm:px-3 sm:py-1.8 sm:text-base md:px-4 md:py-2 md:text-lg hover:bg-green-700 text-white font-bold rounded"
                             >
                                 Save Changes
                             </button>

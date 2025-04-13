@@ -16,8 +16,20 @@ const Moviecard = ({ movie }) => {
     const [message, setMessage] = useState('');
     const [messageType, setMessageType] = useState('');
     const [showExistPrompt, setShowExistPrompt] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
 
     const { currentUser, userData, refreshUserData, checkMovieInList } = useAuth();
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        checkMobile();
+
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     useEffect(() => {
         const checkUserStatus = async () => {
@@ -110,12 +122,20 @@ const Moviecard = ({ movie }) => {
     const getPosterUrl = (path) => {
         return path
             ? `https://image.tmdb.org/t/p/w500${path}`
-            : '/placeholder-poster.jpg'; 
+            : '/placeholder-poster.jpg';
+    };
+
+    const handleCardClick = (e) => {
+        // Don't navigate if clicking on buttons
+        const isButton = e.target.closest('button');
+        if (!isButton) {
+            navigate(`/movie/${movie.id}`);
+        }
     };
 
     return (
         <li className='relative group bg-gray-800 rounded-lg overflow-hidden shadow-lg cursor-pointer trasition-transform hover:-translate-y-1 hover:shadow-xl'
-            onClick={() => navigate(`/movie/${movie.id}`)}
+            onClick={handleCardClick}
         >
             <div className='relative'>
                 <img
@@ -125,7 +145,7 @@ const Moviecard = ({ movie }) => {
                     loading='lazy'
                 />
 
-                <div className='absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity'>
+                <div className={`absolute inset-0 bg-gradient-to-t from-black/70 to-transparent ${isMobile ? 'opacity-100' : 'opacity-0 group-hover:opacity-100'} transition-opacity`}>
                     <div className='absolute bottom-0 p-4 w-full'>
                         <div className='flex justify-between items-center mb-2'>
                             <div className='bg-yellow-600 text-white text-sm font-bold px-2 py-1 rounded'>
