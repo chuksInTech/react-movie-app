@@ -144,7 +144,7 @@ const Moviecard = ({ movie }) => {
                     loading='lazy'
                 />
 
-                <div className={`absolute inset-0 bg-gradient-to-t from-black/70 to-transparent ${isMobile ? 'opacity-50' : 'opacity-0 group-hover:opacity-100'} transition-opacity`}>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                     <div className='absolute bottom-0 p-4 w-full'>
                         <div className='flex justify-between items-center mb-2'>
                             <div className='bg-yellow-600 text-white text-sm font-bold px-2 py-1 rounded'>
