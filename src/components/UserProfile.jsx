@@ -302,9 +302,9 @@ const UserProfile = () => {
                                             <p className="text-gray-400 text-sm line-clamp-2">Added: {new Date(movie.added_at).toLocaleDateString()}</p>
                                             <button
                                                 onClick={() => navigate(`/movie/${movie.id}`)}
-                                                className="mt-2 bg-purple-600 hover:bg-purple-700 text-white font-medium text-sm py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                                                className="w-full mt-2 bg-purple-600 hover:bg-purple-700 text-white font-medium text-sm py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                                             >
-                                                View Details
+                                                Movie Details
                                             </button>
                                         </div>
                                     </div>
