@@ -23,7 +23,7 @@ const Navbar = ({searchTerm, setSearchTerm}) => {
           {currentUser ? (
             <>
               <Link to="/user-profile" className="text-gray-300 hover:text-white">
-              <User size={16} mr-2/>
+              <User size={18} mr-2/>
               </Link>
               <button onClick={() => { logout(); navigate('/'); }} className="text-gray-300 hover:text-white">Logout</button>
             </>
