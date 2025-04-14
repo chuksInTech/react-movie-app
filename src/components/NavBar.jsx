@@ -22,11 +22,16 @@ const Navbar = ({searchTerm, setSearchTerm}) => {
         <div className="sm:hidden flex items-center gap-2">
           {currentUser ? (
             <>
-              <Link to="/user-profile" className="text-gray-300 hover:text-white">Profile</Link>
+              <Link to="/user-profile" className="text-gray-300 hover:text-white">
+              <User size={16} mr-2/>
+              </Link>
               <button onClick={() => { logout(); navigate('/'); }} className="text-gray-300 hover:text-white">Logout</button>
             </>
           ) : (
-            <Link to="/login" className="text-gray-300 hover:text-white">Login</Link>
+            <Link to="/login" className="flex items-center text-gray-200 hover:text-white">
+            <LogIn size={16} className='mr-1'/>
+            <span>Login</span>
+            </Link>
           )}
         </div>
       </div>
